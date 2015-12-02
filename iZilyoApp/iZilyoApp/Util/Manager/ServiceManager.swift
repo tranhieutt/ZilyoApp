@@ -46,7 +46,7 @@ public class ServiceManager {
 //@"https://zilyo.p.mashape.com/search?isinstantbook=true&nelatitude=22.37&nelongitude=-154.48000000000002&provider=airbnb%2Chousetrip&swlatitude=18.55&swlongitude=-160.52999999999997"];
         
         
-        let params = [ "nelatitude" : 21.027764,"nelongitude":105.834160] as Dictionary<String, AnyObject>
+        let params = [ "latitude" : 21.027764,"longitude":105.834160] as Dictionary<String, AnyObject>
 
         
 
@@ -63,6 +63,8 @@ public class ServiceManager {
                 if completion != nil {
                     completion! (list: JSON as! NSDictionary)
                 }
+
+
 
             }
         }
