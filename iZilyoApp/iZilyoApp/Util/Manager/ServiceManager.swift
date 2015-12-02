@@ -23,7 +23,7 @@ public class ServiceManager {
     }
     public func getReview(){
         let manager = Alamofire.Manager.sharedInstance
-        let urlString = "https://goodfoods-search-grocery-product-reviews-by-barcode-v1.p.mashape.com/search?barcode=823734014026"
+        let urlString = "https://zilyo.p.mashape.com/search?isinstantbook=true&nelatitude=22.37&nelongitude=-154.48000000000002&provider=airbnb%2Chousetrip&swlatitude=18.55&swlongitude=-160.52999999999997"
         let headers = ["Accept": "application/json","X-Mashape-Key": "tKxQHTDGAbmsh3dKmcUkZOz0utf1p1ZyJ4OjsnDxjp0ybJQGxP"]
         manager.request(.GET, urlString, headers: headers).responseJSON { response in
             print(response.request)  // original URL request
@@ -39,18 +39,26 @@ public class ServiceManager {
     }
     public  func getInformationOfItemVia(barCodeString: String, completion: ((list : NSDictionary!) -> Void)?) {
         //---  block code.
-        let test = barCodeString;
         let manager = Alamofire.Manager.sharedInstance
-        let urlString = "https://goodfoods-search-grocery-product-reviews-by-barcode-v1.p.mashape.com/search?barcode=" + test
+//        let urlString = "https://zilyo.p.mashape.com/search?isinstantbook=true&nelatitude=22.37&nelongitude=-154.48000000000002"
+        
         let headers = ["Accept": "application/json","X-Mashape-Key": "tKxQHTDGAbmsh3dKmcUkZOz0utf1p1ZyJ4OjsnDxjp0ybJQGxP"]
-        manager.request(.GET, urlString, headers: headers).responseJSON { response in
+//@"https://zilyo.p.mashape.com/search?isinstantbook=true&nelatitude=22.37&nelongitude=-154.48000000000002&provider=airbnb%2Chousetrip&swlatitude=18.55&swlongitude=-160.52999999999997"];
+        
+        
+        let params = [ "nelatitude" : 21.027764,"nelongitude":105.834160] as Dictionary<String, AnyObject>
+
+        
+
+        
+        manager.request(.GET, "https://zilyo.p.mashape.com/search",parameters: params, headers: headers).responseJSON { response in
 //            print(response.request)  // original URL request
 //            print(response.response) // URL response
 //            print(response.data)     // server data
 //            print(response.result)   // result of response serialization
             
             if let JSON = response.result.value {
-//                print("\(JSON)")
+              print("\(JSON)")
                
                 if completion != nil {
                     completion! (list: JSON as! NSDictionary)
@@ -60,6 +68,7 @@ public class ServiceManager {
         }
 
     }
+
 
 
 }
