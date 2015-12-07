@@ -58,7 +58,7 @@ public class ServiceManager {
 //            print(response.result)   // result of response serialization
             
             if let JSON = response.result.value {
-              print("\(JSON)")
+//              print("\(JSON)")
                
                 if completion != nil {
                     completion! (list: JSON as! NSDictionary)
