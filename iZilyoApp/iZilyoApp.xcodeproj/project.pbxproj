@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C7A9E061C127A0A005A2A8F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF192351C0F114D00967AE0 /* Alamofire.framework */; };
+		4C7A9E081C127D8E005A2A8F /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A9E071C127D8E005A2A8F /* CommonUtil.swift */; };
+		4C8C851C1C1325E00008C234 /* HotelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C851B1C1325E00008C234 /* HotelModel.swift */; };
+		4C8C851E1C1326F10008C234 /* PriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C851D1C1326F10008C234 /* PriceModel.swift */; };
+		4C8C85201C1328C90008C234 /* AttributeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C851F1C1328C90008C234 /* AttributeModel.swift */; };
+		4C8C85221C1329CB0008C234 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C85211C1329CB0008C234 /* LocationModel.swift */; };
 		4CF1912C1C0F0CF200967AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1912B1C0F0CF200967AE0 /* AppDelegate.swift */; };
 		4CF1912E1C0F0CF200967AE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1912D1C0F0CF200967AE0 /* ViewController.swift */; };
 		4CF191311C0F0CF200967AE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF1912F1C0F0CF200967AE0 /* Main.storyboard */; };
@@ -82,6 +88,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C7A9E071C127D8E005A2A8F /* CommonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
+		4C8C851B1C1325E00008C234 /* HotelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelModel.swift; sourceTree = "<group>"; };
+		4C8C851D1C1326F10008C234 /* PriceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceModel.swift; sourceTree = "<group>"; };
+		4C8C851F1C1328C90008C234 /* AttributeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeModel.swift; sourceTree = "<group>"; };
+		4C8C85211C1329CB0008C234 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		4CF191281C0F0CF200967AE0 /* iZilyoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iZilyoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF1912B1C0F0CF200967AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF1912D1C0F0CF200967AE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7A9E061C127A0A005A2A8F /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +203,10 @@
 			isa = PBXGroup;
 			children = (
 				4CF191451C0F0EBB00967AE0 /* ItemReview.swift */,
+				4C8C851B1C1325E00008C234 /* HotelModel.swift */,
+				4C8C851D1C1326F10008C234 /* PriceModel.swift */,
+				4C8C851F1C1328C90008C234 /* AttributeModel.swift */,
+				4C8C85211C1329CB0008C234 /* LocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +232,7 @@
 		4CF191481C0F0EBB00967AE0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4C7A9E071C127D8E005A2A8F /* CommonUtil.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -437,6 +454,11 @@
 				4CF191A91C0F0EBB00967AE0 /* ItemReview.swift in Sources */,
 				4CF1912E1C0F0CF200967AE0 /* ViewController.swift in Sources */,
 				4CF1912C1C0F0CF200967AE0 /* AppDelegate.swift in Sources */,
+				4C7A9E081C127D8E005A2A8F /* CommonUtil.swift in Sources */,
+				4C8C85221C1329CB0008C234 /* LocationModel.swift in Sources */,
+				4C8C85201C1328C90008C234 /* AttributeModel.swift in Sources */,
+				4C8C851E1C1326F10008C234 /* PriceModel.swift in Sources */,
+				4C8C851C1C1325E00008C234 /* HotelModel.swift in Sources */,
 				4CF191AA1C0F0EBB00967AE0 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
